@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/UniWebView/Demo/UniWebViewDemo.unity
-    guid: 938c077f40a814d4584ce2ad17947cf3
+    path: Assets/Scenes/ModeFromServerThirdTechnique.unity
+    guid: d571ce72d1520433198ae20a7e845c40
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1747c2c3bbb3842a78b195661b3d5316, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 798f095bcd1564729a7d1f17c2f32355, type: 2}

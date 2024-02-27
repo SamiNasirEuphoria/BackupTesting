@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _boolKeys:
   - StandardMaterialMapper
-  _boolValues: 01
+  - HDRPMaterialMapper
+  - UniversalRPMaterialMapper
+  _boolValues: 010000
