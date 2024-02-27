@@ -119,8 +119,14 @@ public class ModelLoader : MonoBehaviour
         var parentObject = childObject;
         AssetLoaderZip.LoadModelFromZipFile(Application.persistentDataPath + path, OnLoad, OnMaterialsLoad, OnProgress, OnError, parentObject, assetLoaderOptions, _items, null);
         image.sprite = null;
+        StartCoroutine(SuccessMessage(button, _loading));
+    }
+    IEnumerator SuccessMessage(Button button, Text loading)
+    {
+        yield return new WaitForSeconds(3.5f);
         button.interactable = true;
-        _loading.text = "successful";
+        loading.text = "successful";
+
     }
     private void OnError(IContextualizedError obj)
     {
