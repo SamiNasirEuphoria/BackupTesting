@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1187297630
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 225af3ed5f1fcb7b15ac8bc606cb2206
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c78d8ac06ea7e8cafd5efce5be694c28
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Logo.prefab
+Dependencies: []

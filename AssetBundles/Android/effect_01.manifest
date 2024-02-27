@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 1493591401
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 840b8de7ae7ddb25ffbf6ae512c3f90d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2fdfad25849ab933bbd6327ef5032d77
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_01.prefab
+Dependencies: []

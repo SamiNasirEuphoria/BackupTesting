@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2022074693
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: apple
+      Dependencies: {}
+    Info_1:
+      Name: facemask
+      Dependencies: {}
+    Info_2:
+      Name: logo
+      Dependencies: {}
+    Info_3:
+      Name: effect_01
+      Dependencies: {}

@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2248749235
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: arisa
+      Dependencies: {}
+    Info_1:
+      Name: facemask
+      Dependencies: {}
