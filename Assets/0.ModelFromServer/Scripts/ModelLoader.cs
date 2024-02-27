@@ -109,6 +109,8 @@ public class ModelLoader : MonoBehaviour
         var assetLoaderOptions = AssetLoader.CreateDefaultLoaderOptions();
         var parentObject = chidlobject;
         AssetLoaderZip.LoadModelFromZipFile(Application.persistentDataPath +path, OnLoad, OnMaterialsLoad, OnProgress, OnError, parentObject, assetLoaderOptions, _items, null);
+        //AssetLoader.LoadModelFromFile(Application.persistentDataPath + path, OnLoad, OnMaterialsLoad, OnProgress, OnError, parentObject, assetLoaderOptions, _items, true);
+
     }
     void LoadingModel(string _fileName, Image image, Text _loading, GameObject childObject, Button button)
     {
@@ -117,6 +119,7 @@ public class ModelLoader : MonoBehaviour
         var hasFiles = _items != null && _items.Count > 0; //&& _items[0].HasData;
         var assetLoaderOptions = AssetLoader.CreateDefaultLoaderOptions();
         var parentObject = childObject;
+        //AssetLoader.LoadModelFromFile(Application.persistentDataPath + path, OnLoad, OnMaterialsLoad, OnProgress, OnError, parentObject, assetLoaderOptions, _items, true);
         AssetLoaderZip.LoadModelFromZipFile(Application.persistentDataPath + path, OnLoad, OnMaterialsLoad, OnProgress, OnError, parentObject, assetLoaderOptions, _items, null);
         image.sprite = null;
         StartCoroutine(SuccessMessage(button, _loading));

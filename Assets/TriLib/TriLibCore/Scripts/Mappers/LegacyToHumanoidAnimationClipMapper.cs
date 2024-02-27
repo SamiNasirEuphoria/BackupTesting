@@ -14,8 +14,6 @@ namespace TriLibCore.Mappers
         /// So we get these settings from the template animation clip.
         /// </summary>
         public AnimationClip MecanimAnimationClipTemplate;
-
-        /// <inheritdoc/>
         public override AnimationClip[] MapArray(AssetLoaderContext assetLoaderContext, AnimationClip[] sourceAnimationClips)
         {
             var animator = assetLoaderContext.RootGameObject.GetComponent<Animator>();
