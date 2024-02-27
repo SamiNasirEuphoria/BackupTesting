@@ -12,7 +12,7 @@ namespace TriLibCore
     /// Represents the TriLib project settings provider.
     /// You can override this behavior to store the settings in other places, in case you don't want to use Unity built-in PlayerPrefs.
     /// </summary>
-    public class TriLibSettings : ScriptableObject, ISerializationCallbackReceiver
+    public class EuphoriaModelLoaderSettings : ScriptableObject, ISerializationCallbackReceiver
     {
         private Dictionary<string, bool> _boolPreferences;
         [SerializeField]
@@ -22,16 +22,16 @@ namespace TriLibCore
         [HideInInspector]
         private List<bool> _boolValues;
 
-        private static TriLibSettings GetTriLibPreferences()
+        private static EuphoriaModelLoaderSettings GetTriLibPreferences()
         {
-            var preferencesFiles = Resources.LoadAll<TriLibSettings>(string.Empty);
-            TriLibSettings triLibSettings;
+            var preferencesFiles = Resources.LoadAll<EuphoriaModelLoaderSettings>(string.Empty);
+            EuphoriaModelLoaderSettings triLibSettings;
             if (preferencesFiles.Length == 0)
             {
 #if UNITY_EDITOR
                 var triLibDirectories = AssetDatabase.FindAssets("TriLibMainFolderPlaceholder");
                 var triLibDirectory = triLibDirectories.Length > 0 ? FileUtils.GetFileDirectory(AssetDatabase.GUIDToAssetPath(triLibDirectories[0])) : "";
-                triLibSettings = CreateInstance<TriLibSettings>();
+                triLibSettings = CreateInstance<EuphoriaModelLoaderSettings>();
                 AssetDatabase.CreateAsset(triLibSettings, $"{triLibDirectory}/TriLibSettings.asset");
                 AssetDatabase.SaveAssets();
 #else

@@ -97,11 +97,11 @@ namespace TriLibCore.Editor
             EditorGUILayout.Space();
             foreach (var materialMapperName in MaterialMapper.RegisteredMappers)
             {
-                var value = TriLibSettings.GetBool(materialMapperName);
+                var value = EuphoriaModelLoaderSettings.GetBool(materialMapperName);
                 var newValue = EditorGUILayout.Toggle(materialMapperName, value);
                 if (newValue != value)
                 {
-                    TriLibSettings.SetBool(materialMapperName, newValue);
+                    EuphoriaModelLoaderSettings.SetBool(materialMapperName, newValue);
                 }
             }
             EditorGUILayout.Space();

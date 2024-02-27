@@ -14,7 +14,7 @@ namespace TriLibCore.Editor
             var hasAnyMapper = false;
             foreach (var materialMapperName in MaterialMapper.RegisteredMappers)
             {
-                if (TriLibSettings.GetBool(materialMapperName))
+                if (EuphoriaModelLoaderSettings.GetBool(materialMapperName))
                 {
                     hasAnyMapper = true;
                     break;
@@ -36,7 +36,7 @@ namespace TriLibCore.Editor
                     materialMapper = "StandardMaterialMapper";
                 }
                 Debug.Log($"TriLib is configured to use the '{materialMapper}' Material Mapper. If you want to use different Material Mappers, you can change this setting on the Project Settings/TriLib area.");
-                TriLibSettings.SetBool(materialMapper, true);
+                EuphoriaModelLoaderSettings.SetBool(materialMapper, true);
             }
         }
 
@@ -45,7 +45,7 @@ namespace TriLibCore.Editor
         {
             foreach (var materialMapperName in MaterialMapper.RegisteredMappers)
             {
-                TriLibSettings.SetBool(materialMapperName, false);
+                EuphoriaModelLoaderSettings.SetBool(materialMapperName, false);
             }
             string materialMapper;
             if (GraphicsSettingsUtils.IsUsingHDRPPipeline)
@@ -67,7 +67,7 @@ namespace TriLibCore.Editor
         {
 
             Debug.Log($"TriLib is configured to use the '{materialMapper}' Material Mapper. If you want to use different Material Mappers, you can change this setting on the Project Settings/TriLib area.");
-            TriLibSettings.SetBool(materialMapper, true);
+            EuphoriaModelLoaderSettings.SetBool(materialMapper, true);
         }
     }
 }

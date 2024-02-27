@@ -25,7 +25,7 @@ namespace TriLibCore.Mappers
 
         public override bool IsCompatible(MaterialMapperContext materialMapperContext)
         {
-            return TriLibSettings.GetBool("StandardMaterialMapper");
+            return EuphoriaModelLoaderSettings.GetBool("StandardMaterialMapper");
         }
 
         public override void Map(MaterialMapperContext materialMapperContext)
